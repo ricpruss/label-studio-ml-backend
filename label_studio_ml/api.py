@@ -56,7 +56,7 @@ def _predict():
     return jsonify(response)
 
 
-@_server.route('/setup', methods=['POST'])
+@_server.route('/setup', methods=['GET', 'POST'])
 @exception_handler
 def _setup():
     data = request.json
